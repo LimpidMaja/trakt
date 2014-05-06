@@ -15,3 +15,8 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+
+
+spec/.DS_Store
+
+.DS_Store

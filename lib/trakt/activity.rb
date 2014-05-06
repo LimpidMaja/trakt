@@ -28,5 +28,11 @@ module Trakt
     def user(*args)
       get_with_args('/activity/user.json/', *args)
     end
+    def collection(*args)
+      get_with_args('/user/library/movies/collection.json/', *args)
+    end
+    def watched(*args)
+        get_with_args('/user/library/movies/watched.json/', *args)
+    end
   end
 end
