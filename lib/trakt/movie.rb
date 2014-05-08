@@ -28,6 +28,9 @@ module Trakt
     def summary(*args)
       get_with_args('/search/summary.json/', *args)
     end
+    def movie_summary(*args)
+        get_with_args('/movie/summary.json/', *args)
+    end
     def unlibrary(options = {})
       post("/movie/unlibrary", options)
     end

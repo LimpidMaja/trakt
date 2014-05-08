@@ -5,6 +5,7 @@ require "excon"
 require "digest"
 require "trakt/connection"
 require "trakt/account"
+require "trakt/user"
 require "trakt/list"
 require "trakt/movie"
 require "trakt/search"
@@ -32,6 +33,9 @@ module Trakt
     end
     def account
       @account ||= Account.new self
+    end
+    def user
+      @user ||= User.new self
     end
     def calendar
       @calendar ||= Calendar.new self
