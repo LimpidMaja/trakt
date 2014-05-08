@@ -1,5 +1,5 @@
 module Trakt
-  class User
+  class Account
     include Connection
     def movies_collection(*args)
         get_with_args('/user/library/movies/collection.json/', *args)
